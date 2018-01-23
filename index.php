@@ -21,7 +21,7 @@ function replyToUser($reToken,$message,$ac_token){
 	//echo $result . "\r\n";
 }
 
-$access_token = 'T5hAc8fLduXLiBDGN1CuvnXBkevO/uppw7pS8e/yst/d/4Kc1cb/s3BkKQIo8SF7XFfFeDesZxbMoENRGxznP4jJvGnW7ogEcHOt1OHeWY/dCDs/Y1vxqLNa7FkK3OsG+xXiSf/ySJYt5JP1GwjxEgdB04t89/1O/w1cDnyilFU=';
+$access_token = 'kjFApu9NrI3EaPZnNGjc87fHL/JPsSyFr0kY1Detwn69x8DtLM1kV241eOtcCJIgNWBRGLeRH+AI3U393nRDc8MDaGu6TmaAVoYpZOdZ3jYs+obFkCu3zMNQ/sQkaZknOxEEH+me7jEMaKQwQ+vBzwdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
 $content = file_get_contents('php://input');
