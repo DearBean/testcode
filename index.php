@@ -73,7 +73,7 @@ echo "Hello Line BOT";*/
 
 $username = "yuhengl";
 $password = "dd123456";
-$hostname = "testdb.cga2wyvjsrqq.us-east-2.rds.amazonaws.com"; 
+$hostname = "testdb.cga2wyvjsrqq.us-east-2.rds.amazonaws.com:3306"; 
 
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password) 
