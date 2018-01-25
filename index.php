@@ -65,6 +65,7 @@ if (!is_null($events['events'])) {
 		
 	
 }
+echo "test";
 createUser();
 echo "Connected to MySQL<br>";
 echo "Hello Line BOT";
