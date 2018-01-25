@@ -1,5 +1,5 @@
 <?php
-/*function replyToUser($reToken,$message,$ac_token){
+function replyToUser($reToken,$message,$ac_token){
 	
 	// Make a POST Request to Messaging API to reply to sender
 	$url = 'https://api.line.me/v2/bot/message/reply';
@@ -29,8 +29,7 @@ function createUser(){
 	$hostname = "testdb.cga2wyvjsrqq.us-east-2.rds.amazonaws.com"; 
 
 //connection to the database
-	$dbhandle = mysql_connect($hostname, $username, $password)
-	or die("Unable to connect to MySQL");
+	$dbhandle = mysqli_connect($hostname, $username, $password, "userInfo");
 
 	
 }
@@ -69,19 +68,7 @@ if (!is_null($events['events'])) {
 echo "test";
 createUser();
 echo "Connected to MySQL<br>";
-echo "Hello Line BOT";*/
+echo "Hello Line BOT";
 
-$username = "yuhengl";
-$password = "dd123456";
-$hostname = "testdb.cga2wyvjsrqq.us-east-2.rds.amazonaws.com:3306"; 
-
-echo "Start to connecet";
-//connection to the database
-$dbhandle = mysql_connect($hostname, $username, $password);
-if(!$dbhandle){
-	die('fail'.mysql_error());
-}
-mysql_close($dbhandle);
-echo "Connected to MySQL<br>";
 
 ?>
