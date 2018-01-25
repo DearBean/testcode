@@ -78,7 +78,7 @@ $hostname = "testdb.cga2wyvjsrqq.us-east-2.rds.amazonaws.com:3306";
 echo "Start to connecet";
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password);
-if(!dbhandle){
+if(!$dbhandle){
 	die('fail'.mysql_error());
 }
 mysql_close($dbhandle);
