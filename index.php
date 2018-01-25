@@ -30,7 +30,7 @@ function createUser(){
 
 //connection to the database
 	$dbhandle = mysql_connect($hostname, $username, $password); 
-	or die("Unable to connect to MySQL");
+
 	
 }
 
@@ -60,10 +60,12 @@ if (!is_null($events['events'])) {
 				];
 			
 			replyToUser($replyToken,$messages,$access_token);
+			
 		}
-		createUser();
-		echo "Connected to MySQL<br>";
+		
 	
 }
+createUser();
+echo "Connected to MySQL<br>";
 echo "Hello Line BOT";
 ?>
