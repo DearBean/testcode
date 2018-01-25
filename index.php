@@ -71,9 +71,9 @@ createUser();
 echo "Connected to MySQL<br>";
 echo "Hello Line BOT";*/
 
-$username = "your_name";
-$password = "your_password";
-$hostname = "localhost"; 
+$username = "yuhengl";
+$password = "dd123456";
+$hostname = "testdb.cga2wyvjsrqq.us-east-2.rds.amazonaws.com"; 
 
 //connection to the database
 $dbhandle = mysql_connect($hostname, $username, $password) 
