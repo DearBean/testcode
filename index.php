@@ -75,9 +75,9 @@ $username = "yuhengl";
 $password = "dd123456";
 $hostname = "testdb.cga2wyvjsrqq.us-east-2.rds.amazonaws.com:3306"; 
 
+echo "Start to connecet";
 //connection to the database
-$dbhandle = mysql_connect($hostname, $username, $password) 
-  or die("Unable to connect to MySQL");
+$dbhandle = mysql_connect($hostname, $username, $password);
 echo "Connected to MySQL<br>";
 
 ?>
