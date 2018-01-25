@@ -20,7 +20,7 @@ function replyToUser($reToken,$message,$ac_token){
 	curl_close($ch);
 	//echo $result . "\r\n";
 }
-
+/*
 function createUser(){
 	
 	
@@ -33,7 +33,7 @@ function createUser(){
 	or die("Unable to connect to MySQL");
 	
 }
-
+*/
 
 
 $access_token = 'kjFApu9NrI3EaPZnNGjc87fHL/JPsSyFr0kY1Detwn69x8DtLM1kV241eOtcCJIgNWBRGLeRH+AI3U393nRDc8MDaGu6TmaAVoYpZOdZ3jYs+obFkCu3zMNQ/sQkaZknOxEEH+me7jEMaKQwQ+vBzwdB04t89/1O/w1cDnyilFU=';
@@ -61,8 +61,8 @@ if (!is_null($events['events'])) {
 			
 			replyToUser($replyToken,$messages,$access_token);
 		}
-		createUser();
-		echo "Connected to MySQL<br>";
+	//	createUser();
+	//	echo "Connected to MySQL<br>";
 	
 }
 echo "Hello Line BOT";
