@@ -1,4 +1,4 @@
-<?php
+<?php/*
 function replyToUser($reToken,$message,$ac_token){
 	
 	// Make a POST Request to Messaging API to reply to sender
@@ -70,5 +70,14 @@ createUser();
 echo "Connected to MySQL<br>";
 echo "Hello Line BOT";
 
+*/
+$username = "yuhengl";
+$password = "dd123456";
+$hostname = "testdb.cga2wyvjsrqq.us-east-2.rds.amazonaws.com"; 
 
+//connection to the database
+$dbhandle = mysqli_connect($hostname, $username, $password, "userInfo");
+//$dbhandle = mysql_connect($hostname, $username, $password) 
+//  or die("Unable to connect to MySQL");
+echo "Connected to MySQL<br>";
 ?>
